@@ -1,3 +1,4 @@
+from file_handler import read_data
 from student import create_student
 from file_handler import save_student
 from file_handler import view_students

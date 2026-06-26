@@ -2,7 +2,7 @@
     {
         "student_id": "St101",
         "name": "Mukund",
-        "address": "Palwal",
+        "student_address": "Palwal",
         "qualifications": [
             "10",
             "12",
