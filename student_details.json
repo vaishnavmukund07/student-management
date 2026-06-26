@@ -1,0 +1,14 @@
+[
+    {
+        "student_id": "St101",
+        "name": "Mukund",
+        "address": "Palwal",
+        "qualifications": [
+            "10",
+            "12",
+            "BTECH"
+            
+        ],
+        "create_date": "26-06-2026"
+    }
+]
