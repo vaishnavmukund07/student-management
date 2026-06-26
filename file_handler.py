@@ -80,7 +80,7 @@ def search_student():
     students = read_data()
 
     if len(students) == 0:
-        print("Student not found!")
+        print("Student recordnot found!")
         return
 
     for student in students:

@@ -1,41 +1,38 @@
-from file_handler import read_data
-from student import create_student
-from file_handler import save_student
-from file_handler import view_students
-from file_handler import search_by_qualification
-from file_handler import load_students
-
+from file_handler import (
+    students_registration,
+    update_student,
+    students_details,
+    search_student)
 while True:
 
     print("\n===== STUDENT RECORD SYSTEM =====")
     print("1. Add Student")
-    print("2. Search By Qualification")
-    print("3. View All Students")
-    print("4. Exit")
+    print("2. Update Student")
+    print("3. Search Student")
+    print("4. View All Students")
+    print("5. Exit")
 
-    choice = input("Enter Choice: ")
+    choice = input("Enter your Choice: ")
 
     if choice == "1":
 
-        students = load_students()
-
-        student = create_student(students)
-
-        save_student(student)
-
-        print("Student Added Successfully")
+        students_registration()
 
     elif choice == "2":
 
-        search_by_qualification()
+        update_student()
 
     elif choice == "3":
 
-        view_students()
+        search_student()
 
     elif choice == "4":
 
-        print("Thank You")
+        students_details()
+
+    elif choice == "5":
+
+        print("Thank You!")
         break
 
     else:
