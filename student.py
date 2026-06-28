@@ -1,4 +1,3 @@
-from file_handler import read_data, save_data
 from datetime import datetime
 
 
@@ -13,9 +12,14 @@ def create_student(students):
 
     while True:
 
-        qualification = input("Enter Qualification: ")
-        qualifications.append(qualification)
+        qualification_name = input("Enter Qualification Name: ")
+        qualification_year = input("Enter Qualification Year: ")
 
+        qualification = {
+            "name": qualification_name,
+            "year": qualification_year
+        }
+        qualifications.append(qualification)
         choice = input("Add another qualification? (y/n): ")
 
         if choice.lower() == "n":
